@@ -16,10 +16,10 @@ namespace Monte_Carlo_Method
             this.x = x;
             this.y = y;
         }
-        public coordinates(Random rando)
+        public coordinates(Random random)
         {
-            this.x = rando.NextDouble();
-            this.y = rando.NextDouble();
+            this.x = random.NextDouble();
+            this.y = random.NextDouble();
         }
         public double Hypot()
         {
