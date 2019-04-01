@@ -20,25 +20,25 @@ namespace Monte_Carlo_Method
 
             for (int i = 0; i < number; i++)
             {
-                coordinates[i] = new coordinates();
+                coordinates[i] = new coordinates(random);
 
-                if (coordinates[i].Hypot() >= 1)
+                if (coordinates[i].Hypot() <= 1)
                 {
-                    counter++;
+                    ++counter;
                 }
             }
 
             double count = Convert.ToDouble(counter);
             double iterations = Convert.ToDouble(number);
 
-            double estimation = count / iterations;
+            double estimation = (count / iterations) * 4;
 
             Console.WriteLine($"amount of overlaps {count}");
             Console.WriteLine($" PI amount {Math.PI}");
             Console.WriteLine($" Estimation {estimation}");
             Console.WriteLine($" Margin of error {Math.PI - estimation}");
 
-
+            
         }
     }
 }
