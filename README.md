@@ -5,3 +5,7 @@
 3. It does not, we're utilizing random numbers. 
 4. 10000000 took a little bit, it's margin of error was 0.00030585358979307. So close!
 5. Gambling 
+
+# What I learned
+
+How arrays work really clicked during this exercise. I was debugging constantly to make it work!
